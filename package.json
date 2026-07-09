@@ -1,0 +1,58 @@
+{
+  "name": "@trenlok/vscode-toolbox-site",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "dev:public": "nuxt dev --public",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "prepare": "pnpm run hooks:install",
+    "typecheck": "nuxt typecheck",
+    "lint": "pnpm run lint:scripts && pnpm run lint:styles",
+    "lint:styles": "stylelint \"**/*.{css,scss,vue}\" --cache --allow-empty-input",
+    "lint:scripts": "eslint . --cache",
+    "format": "pnpm run format:scripts && pnpm run format:styles",
+    "format:scripts": "eslint . --cache --fix",
+    "format:styles": "stylelint \"**/*.{css,scss,vue}\" --cache --allow-empty-input --fix",
+    "hooks:install": "pnpm exec simple-git-hooks"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^21.0.2",
+    "@commitlint/config-conventional": "^21.0.2",
+    "@nuxt/a11y": "1.0.0-alpha.1",
+    "@nuxt/fonts": "0.14.0",
+    "@nuxtjs/sitemap": "8.0.14",
+    "@rhapsodic/eslint-config": "^1.0.5",
+    "@rhapsodic/stylelint-config": "^1.0.1",
+    "eslint": "^10.5.0",
+    "eslint-plugin-vuejs-accessibility": "^2.5.0",
+    "globals": "^17.6.0",
+    "lint-staged": "^17.0.7",
+    "nuxt": "^4.4.8",
+    "postcss-html": "^1.8.1",
+    "postcss-media-minmax": "^5.0.0",
+    "postcss-scss": "^4.0.9",
+    "sass-embedded": "^1.100.0",
+    "simple-git-hooks": "^2.13.1",
+    "stylelint": "^17.13.0",
+    "vue": "latest",
+    "vue-router": "latest",
+    "vue-tsc": "^3.3.5"
+  },
+  "simple-git-hooks": {
+    "commit-msg": "pnpm exec commitlint --edit",
+    "pre-commit": "pnpm exec lint-staged",
+    "pre-push": "pnpm exec nuxt typecheck"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --cache --fix",
+    "*.{css,scss,vue}": "stylelint --allow-empty-input --cache --fix"
+  },
+  "dependencies": {
+    "@rhapsodic/bem-classnames-vue": "2.1.0"
+  },
+  "packageManager": "pnpm@11.5.2+sha512.71c631e382066efc25625d5cf029075de07b61b37f6e27350fbd84b1bda5864c8c1967adc280776b45c30a715c0359a3be08fef42d5bb09e2b99029979692916"
+}

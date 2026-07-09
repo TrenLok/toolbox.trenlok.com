@@ -1,0 +1,33 @@
+:root {
+  --font-base: 'Geist', sans-serif;
+}
+
+body {
+  color: var(--color-text);
+  font-family: var(--font-base);
+  font-variant: no-common-ligatures;
+  font-size: 14px;
+  font-weight: 400;
+  background: var(--background);
+}
+
+img:not([class]) {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: .25s ease-in-out;
+  transition-property: color;
+
+  &:hover,
+  &:focus-visible {
+    color: var(--color-link-hover);
+  }
+
+  &:active {
+    color: var(--color-link-active);
+  }
+}

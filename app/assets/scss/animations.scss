@@ -1,0 +1,44 @@
+.index-page__header,
+.index-page__links,
+.index-page__screenshot,
+.download-page__header,
+.download-page__versions,
+.download-page__footer {
+  animation: content-enter .55s ease-out both;
+}
+
+.index-page__links,
+.download-page__versions {
+  animation-delay: .1s;
+}
+
+.index-page__screenshot {
+  animation-delay: .15s;
+}
+
+.download-page__footer {
+  animation-delay: .2s;
+}
+
+@keyframes content-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .index-page__header,
+  .index-page__links,
+  .index-page__screenshot,
+  .download-page__header,
+  .download-page__versions,
+  .download-page__footer {
+    animation: none;
+  }
+}
