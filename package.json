@@ -25,7 +25,7 @@
     "@nuxt/a11y": "1.0.0-alpha.1",
     "@nuxt/fonts": "0.14.0",
     "@nuxtjs/sitemap": "8.0.14",
-    "@rhapsodic/eslint-config": "^1.0.5",
+    "@rhapsodic/eslint-config": "^1.1.0",
     "@rhapsodic/stylelint-config": "^1.0.1",
     "eslint": "^10.5.0",
     "eslint-plugin-vuejs-accessibility": "^2.5.0",
