@@ -23,7 +23,7 @@
     "@commitlint/cli": "^21.2.3",
     "@commitlint/config-conventional": "^21.2.3",
     "@nuxt/a11y": "1.0.0-alpha.1",
-    "@nuxt/fonts": "0.14.0",
+    "@nuxt/fonts": "1.0.1",
     "@nuxtjs/sitemap": "8.6.1",
     "@rhapsodic/eslint-config": "^1.0.5",
     "@rhapsodic/stylelint-config": "^1.0.1",
