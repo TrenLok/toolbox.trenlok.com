@@ -195,7 +195,7 @@ importers:
         specifier: ^10.13.0
         version: 10.14.0(jiti@2.7.0)(supports-color@10.2.2)
       eslint-plugin-vuejs-accessibility:
-        specifier: ^2.6.2
+        specifier: ^2.6.3
         version: 2.6.3(eslint@10.14.0(jiti@2.7.0)(supports-color@10.2.2))(globals@17.14.0)(supports-color@10.2.2)
       globals:
         specifier: ^17.13.0
@@ -216,7 +216,7 @@ importers:
         specifier: ^4.0.9
         version: 4.0.9(postcss@8.5.32)
       sass-embedded:
-        specifier: ^1.106.0
+        specifier: ^1.106.1
         version: 1.107.1
       simple-git-hooks:
         specifier: ^2.14.0
