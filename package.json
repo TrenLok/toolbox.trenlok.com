@@ -37,7 +37,7 @@
     "postcss-scss": "^4.0.9",
     "sass-embedded": "^1.107.1",
     "simple-git-hooks": "^2.14.0",
-    "stylelint": "^17.16.0",
+    "stylelint": "^18.0.0",
     "vue": "latest",
     "vue-router": "latest",
     "vue-tsc": "^3.3.14"
